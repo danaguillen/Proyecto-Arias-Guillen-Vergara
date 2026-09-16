@@ -19,6 +19,7 @@ public:
     ~World();
 
     int getCell(int r, int c) const;
+    void setCell(int r, int c, int speciesId);
     int getRows() const;
     int getCols() const;
     int getGeneration() const;
