@@ -1,4 +1,19 @@
 #include "World.h"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+World::World(int r, int c) : rows(r), cols(c), generation(0) {
+    allocateMemory();
+}
+
+World::~World() {
+    freeMemory();
+}
+
+void World::allocateMemory() {
+=======
+>>>>>>> d1372cca01c2d05d125becc2273fb0fc53873b83
 #include <cstdlib>
 #include <algorithm>
 
@@ -18,12 +33,39 @@ void World::allocateGrid(int r, int c) {
 
     rows = r;
     cols = c;
+<<<<<<< HEAD
+=======
+>>>>>>> abb79ffdc7db4d5e05a0649ed0a83f9c514b9f5a
+>>>>>>> d1372cca01c2d05d125becc2273fb0fc53873b83
     grid = new int* [rows];
     for (int i = 0; i < rows; ++i) {
         grid[i] = new int[cols]();
     }
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+void World::freeMemory() {
+    for (int i = 0; i < rows; ++i) {
+        delete[] grid[i];
+    }
+    delete[] grid;
+}
+
+int World::getRows() const { return rows; }
+int World::getCols() const { return cols; }
+int World::getGeneration() const { return generation; }
+const SpeciesConfig& World::getConfig() const { return config; }
+
+void World::setCell(int r, int c, int speciesId) {
+    if (r >= 0 && r < rows && c >= 0 && c < cols) {
+        grid[r][c] = speciesId;
+    }
+}
+
+=======
+>>>>>>> d1372cca01c2d05d125becc2273fb0fc53873b83
 void World::deallocateGrid() {
     if (grid != nullptr) {
         for (int i = 0; i < rows; ++i) {
@@ -66,6 +108,10 @@ void World::resize(int r, int c) {
     generation = 0;
 }
 
+<<<<<<< HEAD
+=======
+>>>>>>> abb79ffdc7db4d5e05a0649ed0a83f9c514b9f5a
+>>>>>>> d1372cca01c2d05d125becc2273fb0fc53873b83
 int World::getCell(int r, int c) const {
     if (r >= 0 && r < rows && c >= 0 && c < cols) {
         return grid[r][c];
@@ -73,6 +119,14 @@ int World::getCell(int r, int c) const {
     return 0;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+void World::setVersion(int version) {
+    if (version == 1) config.loadToroide();
+    else if (version == 2) config.loadCruz();
+=======
+>>>>>>> d1372cca01c2d05d125becc2273fb0fc53873b83
 void World::setCell(int r, int c, int speciesId) {
     if (r >= 0 && r < rows && c >= 0 && c < cols && speciesId >= 0 && speciesId <= 3) {
         grid[r][c] = speciesId;
@@ -199,4 +253,8 @@ void World::getStats(int& pop1, int& pop2, int& pop3, int& totalAlive) const {
         }
     }
     totalAlive = pop1 + pop2 + pop3;
+<<<<<<< HEAD
+=======
+>>>>>>> abb79ffdc7db4d5e05a0649ed0a83f9c514b9f5a
+>>>>>>> d1372cca01c2d05d125becc2273fb0fc53873b83
 }

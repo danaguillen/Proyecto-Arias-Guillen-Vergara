@@ -1,5 +1,26 @@
 #include "ConsoleUI.h"
 #include <iostream>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+void ConsoleUI::renderWorld(const World& world) const {
+    const WorldConfig& sysConfig = world.getConfig().getConfig();
+    std::cout << "\nMAPA DEL MUNDO (Gen " << world.getGeneration() << ")\n";
+    for (int r = 0; r < world.getRows(); ++r) {
+        for (int c = 0; c < world.getCols(); ++c) {
+            int val = world.getCell(r, c);
+            if (val == 0) {
+                std::cout << ". ";
+            }
+            else {
+                std::cout << sysConfig.speciesList[val - 1].symbol << " ";
+            }
+        }
+        std::cout << "\n";
+    }
+=======
+>>>>>>> d1372cca01c2d05d125becc2273fb0fc53873b83
 #include <iomanip>
 #include <vector>
 #include <sstream>
@@ -196,4 +217,8 @@ void ConsoleUI::menuSimulate(World& world) {
     std::cout << "\nSimulacion avanzada " << steps << " generacion(es).\n";
     renderWorld(world);
     renderStats(world);
+<<<<<<< HEAD
+=======
+>>>>>>> abb79ffdc7db4d5e05a0649ed0a83f9c514b9f5a
+>>>>>>> d1372cca01c2d05d125becc2273fb0fc53873b83
 }
