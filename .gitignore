@@ -1,12 +1,16 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> f4a6bef5ec9601c048b24085aa0cc3bcdd1a77c8
 ﻿################################################################################
 # Este archivo .gitignore ha sido creado automáticamente por Microsoft(R) Visual Studio.
 ################################################################################
 
 /.vs/Proyecto Arias Guillen Vergara.slnx
 /Proyecto.07122a6e/x64/Debug
+<<<<<<< HEAD
 =======
 >>>>>>> d1372cca01c2d05d125becc2273fb0fc53873b83
 ## Ignore Visual Studio temporary files, build results, and
@@ -377,3 +381,5 @@ FodyWeavers.xsd
 FodyWeavers.xsd
 >>>>>>> abb79ffdc7db4d5e05a0649ed0a83f9c514b9f5a
 >>>>>>> d1372cca01c2d05d125becc2273fb0fc53873b83
+=======
+>>>>>>> f4a6bef5ec9601c048b24085aa0cc3bcdd1a77c8

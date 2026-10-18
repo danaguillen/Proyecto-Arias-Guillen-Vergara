@@ -12,8 +12,11 @@ private:
     SpeciesConfig config;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> f4a6bef5ec9601c048b24085aa0cc3bcdd1a77c8
     void allocateMemory();
     void freeMemory();
 
@@ -28,6 +31,7 @@ public:
     int getGeneration() const;
     const SpeciesConfig& getConfig() const;
     void setVersion(int version);
+<<<<<<< HEAD
 =======
 >>>>>>> d1372cca01c2d05d125becc2273fb0fc53873b83
     void allocateGrid(int r, int c);
@@ -65,6 +69,8 @@ public:
 =======
 >>>>>>> abb79ffdc7db4d5e05a0649ed0a83f9c514b9f5a
 >>>>>>> d1372cca01c2d05d125becc2273fb0fc53873b83
+=======
+>>>>>>> f4a6bef5ec9601c048b24085aa0cc3bcdd1a77c8
 };
 
 #endif

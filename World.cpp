@@ -1,7 +1,10 @@
 #include "World.h"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> f4a6bef5ec9601c048b24085aa0cc3bcdd1a77c8
 
 World::World(int r, int c) : rows(r), cols(c), generation(0) {
     allocateMemory();
@@ -12,6 +15,7 @@ World::~World() {
 }
 
 void World::allocateMemory() {
+<<<<<<< HEAD
 =======
 >>>>>>> d1372cca01c2d05d125becc2273fb0fc53873b83
 #include <cstdlib>
@@ -37,6 +41,8 @@ void World::allocateGrid(int r, int c) {
 =======
 >>>>>>> abb79ffdc7db4d5e05a0649ed0a83f9c514b9f5a
 >>>>>>> d1372cca01c2d05d125becc2273fb0fc53873b83
+=======
+>>>>>>> f4a6bef5ec9601c048b24085aa0cc3bcdd1a77c8
     grid = new int* [rows];
     for (int i = 0; i < rows; ++i) {
         grid[i] = new int[cols]();
@@ -44,8 +50,11 @@ void World::allocateGrid(int r, int c) {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> f4a6bef5ec9601c048b24085aa0cc3bcdd1a77c8
 void World::freeMemory() {
     for (int i = 0; i < rows; ++i) {
         delete[] grid[i];
@@ -64,6 +73,7 @@ void World::setCell(int r, int c, int speciesId) {
     }
 }
 
+<<<<<<< HEAD
 =======
 >>>>>>> d1372cca01c2d05d125becc2273fb0fc53873b83
 void World::deallocateGrid() {
@@ -112,6 +122,8 @@ void World::resize(int r, int c) {
 =======
 >>>>>>> abb79ffdc7db4d5e05a0649ed0a83f9c514b9f5a
 >>>>>>> d1372cca01c2d05d125becc2273fb0fc53873b83
+=======
+>>>>>>> f4a6bef5ec9601c048b24085aa0cc3bcdd1a77c8
 int World::getCell(int r, int c) const {
     if (r >= 0 && r < rows && c >= 0 && c < cols) {
         return grid[r][c];
@@ -119,6 +131,7 @@ int World::getCell(int r, int c) const {
     return 0;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -257,4 +270,9 @@ void World::getStats(int& pop1, int& pop2, int& pop3, int& totalAlive) const {
 =======
 >>>>>>> abb79ffdc7db4d5e05a0649ed0a83f9c514b9f5a
 >>>>>>> d1372cca01c2d05d125becc2273fb0fc53873b83
+=======
+void World::setVersion(int version) {
+    if (version == 1) config.loadToroide();
+    else if (version == 2) config.loadCruz();
+>>>>>>> f4a6bef5ec9601c048b24085aa0cc3bcdd1a77c8
 }

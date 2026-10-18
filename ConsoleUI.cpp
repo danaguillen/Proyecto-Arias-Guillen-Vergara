@@ -1,8 +1,11 @@
 #include "ConsoleUI.h"
 #include <iostream>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> f4a6bef5ec9601c048b24085aa0cc3bcdd1a77c8
 
 void ConsoleUI::renderWorld(const World& world) const {
     const WorldConfig& sysConfig = world.getConfig().getConfig();
@@ -19,6 +22,7 @@ void ConsoleUI::renderWorld(const World& world) const {
         }
         std::cout << "\n";
     }
+<<<<<<< HEAD
 =======
 >>>>>>> d1372cca01c2d05d125becc2273fb0fc53873b83
 #include <iomanip>
@@ -221,4 +225,6 @@ void ConsoleUI::menuSimulate(World& world) {
 =======
 >>>>>>> abb79ffdc7db4d5e05a0649ed0a83f9c514b9f5a
 >>>>>>> d1372cca01c2d05d125becc2273fb0fc53873b83
+=======
+>>>>>>> f4a6bef5ec9601c048b24085aa0cc3bcdd1a77c8
 }
